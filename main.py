@@ -59,7 +59,7 @@ from Product import Product
 #1.-------------------------------------
 
 def print_name():
-    customers_name = Customer
+    customers_name = Customer()
     print(customers_name.customers_name())
 
 print_name()
@@ -67,7 +67,7 @@ print_name()
 #2.------------------------------------------
 
 def add_item_cart (product):
-    item_added = Customer
+    item_added = Customer()
     return item_added.customer_add_cart(product)
 
 add_item_cart()
@@ -77,7 +77,7 @@ add_item_cart()
 #3.------------------------------------------
 
 def view_product():
-    products = Customer
+    products = Customer()
     print(products.customer_view_cart())
 
 view_product()
@@ -85,7 +85,7 @@ view_product()
 #4-------------------------------------------
 
 def view_price_total():
-    view_total_price = ShoppingCart
+    view_total_price = ShoppingCart()
     print(f'Your total is {view_total_price.calculate_total()}')
 
 view_price_total()
@@ -93,7 +93,7 @@ view_price_total()
 #5----------------------------------------------
 
 def empty_cart():
-    empty_shopping_cart = ShoppingCart
+    empty_shopping_cart = ShoppingCart()
     empty_shopping_cart.empty_cart()
 
 empty_cart()
